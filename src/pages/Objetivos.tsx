@@ -1,6 +1,6 @@
 import { AcademicLayout } from "@/components/layout/AcademicLayout";
 import { SectionHeader } from "@/components/academic/SectionHeader";
-import { Target, CheckCircle2, Lightbulb, Search, BarChart3 } from "lucide-react";
+import { Target, CheckCircle2, Lightbulb, Users, Cpu, BarChart3 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Objetivos = () => {
@@ -25,10 +25,11 @@ const Objetivos = () => {
           <Card className="bg-secondary/50 border-accent/30">
             <CardContent className="p-8">
               <p className="text-lg md:text-xl leading-relaxed text-foreground">
-                Analizar de manera crítica y exhaustiva el impacto de la inteligencia artificial 
-                en los procesos de enseñanza-aprendizaje de la educación superior, identificando 
-                tanto las oportunidades de mejora pedagógica como los desafíos éticos y prácticos 
-                que plantea su implementación en el contexto universitario contemporáneo.
+                Analizar el estado actual del periodismo deportivo en la era digital mediante la 
+                creación y gestión de plataformas multimedia (WordPress, Instagram y YouTube), 
+                complementado con entrevistas a periodistas especializados, con el fin de 
+                comprender las transformaciones profesionales, los desafíos del intrusismo y las 
+                nuevas dinámicas de producción de contenidos deportivos en el ecosistema digital.
               </p>
             </CardContent>
           </Card>
@@ -46,36 +47,43 @@ const Objetivos = () => {
           <div className="grid gap-6">
             <ObjectiveCard 
               number={1}
-              title="Revisión del Estado del Arte"
-              description="Realizar una revisión sistemática de la literatura académica sobre inteligencia artificial aplicada a la educación superior, identificando las principales tendencias, enfoques teóricos y hallazgos empíricos de los últimos cinco años."
-              icon={Search}
+              title="Experimentar con Plataformas Digitales"
+              description="Crear y gestionar un sitio web en WordPress y perfiles activos en Instagram y YouTube para experimentar de primera mano con los formatos, lenguajes y dinámicas propias del periodismo deportivo digital."
+              icon={Cpu}
             />
             
             <ObjectiveCard 
               number={2}
-              title="Análisis de Herramientas Tecnológicas"
-              description="Examinar y categorizar las principales herramientas de IA utilizadas en contextos universitarios, evaluando sus funcionalidades, ventajas y limitaciones pedagógicas desde una perspectiva crítica."
-              icon={BarChart3}
+              title="Recopilar Perspectivas Profesionales"
+              description="Realizar entrevistas estructuradas a periodistas especializados en baloncesto, fútbol masculino, fútbol femenino y fútbol formativo para obtener una visión directa sobre los retos actuales de la profesión."
+              icon={Users}
             />
             
             <ObjectiveCard 
               number={3}
-              title="Evaluación del Impacto Pedagógico"
-              description="Analizar cómo la implementación de sistemas de IA afecta a las metodologías de enseñanza, los roles docentes y las dinámicas de aprendizaje en diferentes disciplinas universitarias."
-              icon={Lightbulb}
+              title="Analizar la Transformación Digital"
+              description="Estudiar cómo la digitalización y las redes sociales han modificado las rutinas de producción, difusión e interacción en el periodismo deportivo contemporáneo."
+              icon={BarChart3}
             />
             
             <ObjectiveCard 
               number={4}
-              title="Identificación de Desafíos Éticos"
-              description="Identificar y discutir los principales dilemas éticos asociados al uso de IA en educación superior, incluyendo cuestiones de privacidad, equidad, integridad académica y sesgo algorítmico."
+              title="Identificar el Problema del Intrusismo"
+              description="Examinar críticamente el fenómeno del intrusismo profesional y su impacto en la legitimidad, calidad y valoración del trabajo periodístico en el ámbito deportivo."
               icon={Target}
             />
             
             <ObjectiveCard 
               number={5}
-              title="Formulación de Recomendaciones"
-              description="Proponer un conjunto de recomendaciones prácticas para la integración responsable y efectiva de herramientas de IA en instituciones de educación superior."
+              title="Evaluar Estrategias de Marca Personal"
+              description="Comprender la importancia de la construcción de marca personal, la gestión de comunidades digitales y la adaptación a algoritmos de plataformas como requisitos profesionales actuales."
+              icon={Lightbulb}
+            />
+
+            <ObjectiveCard 
+              number={6}
+              title="Integrar Teoría y Práctica"
+              description="Vincular el marco teórico revisado con la experiencia práctica de producción multimedia y los testimonios profesionales para ofrecer un análisis integral del periodismo deportivo actual."
               icon={CheckCircle2}
             />
           </div>
@@ -93,32 +101,32 @@ const Objetivos = () => {
             
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <SpecializationCard 
-                title="IA Generativa"
+                title="Producción Multimedia"
                 items={[
-                  "Modelos de lenguaje (GPT, Claude, etc.)",
-                  "Generación de contenido educativo",
-                  "Asistentes virtuales de aprendizaje",
-                  "Detección y prevención del plagio"
+                  "Creación de sitio WordPress",
+                  "Gestión de perfil Instagram",
+                  "Producción de canal YouTube",
+                  "Diseño de parrilla multimedia"
                 ]}
               />
               
               <SpecializationCard 
-                title="Aprendizaje Adaptativo"
+                title="Análisis Profesional"
                 items={[
-                  "Sistemas de tutoría inteligente",
-                  "Personalización del aprendizaje",
-                  "Analítica del aprendizaje (LA)",
-                  "Evaluación automatizada"
+                  "Entrevistas estructuradas",
+                  "Periodismo de baloncesto",
+                  "Periodismo de fútbol",
+                  "Comparativa disciplinar"
                 ]}
               />
               
               <SpecializationCard 
-                title="Ética y Gobernanza"
+                title="Contexto Digital"
                 items={[
-                  "Regulación de la IA educativa",
-                  "Privacidad y protección de datos",
-                  "Sesgo algorítmico",
-                  "Equidad y accesibilidad"
+                  "Intrusismo profesional",
+                  "Algoritmos y visibilidad",
+                  "Marca personal",
+                  "Nuevos modelos de negocio"
                 ]}
               />
             </div>

@@ -2,7 +2,7 @@ import { AcademicLayout } from "@/components/layout/AcademicLayout";
 import { ArrowRight, BookOpen, Users, Calendar, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-academic.jpg";
+import heroImage from "@/assets/hero-sports-journalism.jpg";
 
 const Index = () => {
   return (
@@ -21,16 +21,16 @@ const Index = () => {
         <div className="relative z-10 px-6 md:px-12 py-16 max-w-4xl">
           <div className="animate-fade-in">
             <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
-              Trabajo de Investigación Universitaria
+              Proyecto Multimedia Universitario
             </span>
             
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-              El Impacto de la Inteligencia Artificial en la Educación Superior
+              Transcurso del Juego: Periodismo Deportivo en la Era Digital
             </h1>
             
             <p className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8 max-w-2xl">
-              Un análisis exhaustivo sobre la transformación digital en las universidades 
-              y el rol de las tecnologías emergentes en los procesos de enseñanza-aprendizaje.
+              Un análisis exhaustivo sobre la transformación del periodismo deportivo, el intrusismo 
+              profesional y las nuevas dinámicas de producción multimedia en redes sociales.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -66,26 +66,26 @@ const Index = () => {
             <InfoCard 
               icon={BookOpen}
               title="Asignatura"
-              value="Tecnología Educativa"
-              subtitle="Grado en Educación"
+              value="Multimedia"
+              subtitle="Grado en Periodismo"
             />
             <InfoCard 
               icon={Users}
-              title="Grupo"
-              value="Equipo Alpha"
-              subtitle="4 investigadores"
+              title="Equipo"
+              value="4 autores"
+              subtitle="Periodismo Deportivo"
             />
             <InfoCard 
               icon={Calendar}
               title="Curso Académico"
               value="2024-2025"
-              subtitle="Segundo Semestre"
+              subtitle="Tercer Año"
             />
             <InfoCard 
               icon={Award}
-              title="Universidad"
-              value="UCM"
-              subtitle="Facultad de Educación"
+              title="Proyecto"
+              value="Transcurso del Juego"
+              subtitle="WordPress + RRSS"
             />
           </div>
         </div>
@@ -102,37 +102,37 @@ const Index = () => {
             <NavCard 
               number="01"
               title="Introducción"
-              description="Contexto y marco teórico del impacto de la IA en educación superior"
+              description="Transformación digital del periodismo deportivo y desafíos actuales"
               href="/introduccion"
             />
             <NavCard 
               number="02"
               title="Objetivos"
-              description="Metas generales y específicas de la investigación"
+              description="Metas del proyecto multimedia y análisis profesional"
               href="/objetivos"
             />
             <NavCard 
               number="03"
               title="Metodología"
-              description="Enfoque metodológico y herramientas utilizadas"
+              description="Entrevistas, plataformas digitales y producción multimedia"
               href="/metodologia"
             />
             <NavCard 
               number="04"
               title="Desarrollo"
-              description="Análisis multimedia con recursos interactivos"
+              description="WordPress, Instagram, YouTube y gestión de contenidos"
               href="/desarrollo"
             />
             <NavCard 
               number="05"
               title="Conclusiones"
-              description="Hallazgos principales y reflexiones finales"
+              description="Hallazgos sobre intrusismo y transformación digital"
               href="/conclusiones"
             />
             <NavCard 
               number="06"
               title="Bibliografía"
-              description="Fuentes consultadas en formato APA 7ª edición"
+              description="Fuentes sobre periodismo deportivo en formato APA"
               href="/bibliografia"
             />
           </div>
@@ -143,10 +143,10 @@ const Index = () => {
       <footer className="px-6 md:px-12 py-8 bg-primary text-primary-foreground">
         <div className="max-w-6xl mx-auto text-center">
           <p className="font-serif text-lg mb-2">
-            Trabajo Académico — Universidad Complutense de Madrid
+            Transcurso del Juego — Proyecto Multimedia de Periodismo
           </p>
           <p className="text-sm text-primary-foreground/70">
-            © 2024-2025 Equipo Alpha. Todos los derechos reservados.
+            © 2024-2025 Antonio Spada, Israel Calero, Juan Arrufat, Erik Allerding.
           </p>
         </div>
       </footer>

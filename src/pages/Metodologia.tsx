@@ -1,7 +1,7 @@
 import { AcademicLayout } from "@/components/layout/AcademicLayout";
 import { SectionHeader } from "@/components/academic/SectionHeader";
-import { Wrench, Database, Search, FileText, Users, GitBranch, CheckSquare } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Wrench, Users, FileText, Camera, CheckSquare, Mic } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Metodologia = () => {
   return (
@@ -19,20 +19,13 @@ const Metodologia = () => {
           
           <div className="academic-body space-y-6">
             <p>
-              Este trabajo adopta un enfoque metodológico mixto, combinando técnicas de 
-              investigación cualitativa y cuantitativa para abordar de manera integral 
-              el objeto de estudio. La elección de este enfoque responde a la complejidad 
-              del fenómeno analizado, que requiere tanto la comprensión profunda de las 
-              experiencias y percepciones de los actores educativos como el análisis 
-              sistemático de datos cuantitativos sobre adopción y uso de tecnologías de IA.
-            </p>
-            
-            <p>
-              El diseño metodológico se estructura en tres fases principales: (1) revisión 
-              sistemática de literatura, (2) análisis documental de herramientas y plataformas, 
-              y (3) síntesis integradora de hallazgos. Cada fase contribuye a los objetivos 
-              específicos del estudio y permite triangular la información obtenida desde 
-              múltiples fuentes.
+              La metodología de este trabajo de investigación cuenta con una parte práctica (las 
+              entrevistas y búsqueda de profesionales) además de la creación de herramientas 
+              multimedia como páginas web, blogs y redes sociales (Instagram, YouTube y WordPress), 
+              pero por otro lado también se desarrolló mediante un enfoque más analítico el cual 
+              estaremos explicando en este apartado. El proceso se desarrolló en varias fases 
+              complementarias que permitieron integrar herramientas de producción multimedia, 
+              investigación documental y entrevistas estructuradas.
             </p>
           </div>
         </section>
@@ -44,77 +37,91 @@ const Metodologia = () => {
           <div className="space-y-6">
             <PhaseCard 
               number={1}
-              title="Revisión Sistemática de Literatura"
-              period="Semanas 1-4"
-              description="Búsqueda, selección y análisis crítico de fuentes académicas relevantes sobre IA en educación superior."
+              title="Investigación Documental"
+              period="Fase inicial"
+              description="Se llevó a cabo una investigación documental acerca del tema (periodismo deportivo) centrada en tres ejes principales: transformación digital del periodismo, evolución del periodismo deportivo y problemas actuales del sector."
               activities={[
-                "Definición de criterios de inclusión/exclusión",
-                "Búsqueda en bases de datos (Scopus, WoS, ERIC)",
-                "Selección mediante protocolo PRISMA",
-                "Análisis temático de contenidos"
+                "Transformación digital del periodismo",
+                "Evolución del periodismo deportivo",
+                "Intrusismo profesional y precarización",
+                "Especialización y marca personal"
               ]}
-              icon={Search}
+              icon={FileText}
             />
             
             <PhaseCard 
               number={2}
-              title="Análisis de Herramientas"
-              period="Semanas 5-8"
-              description="Exploración y evaluación práctica de las principales herramientas de IA aplicadas a la educación."
+              title="Búsqueda de Profesionales"
+              period="Fase de contacto"
+              description="Se evaluaron distintos perfiles de periodistas que pudieran encajar dentro del proyecto de investigación, contactándolos para pautar entrevistas."
               activities={[
-                "Identificación de herramientas relevantes",
-                "Pruebas de funcionalidad",
-                "Evaluación con rúbrica diseñada",
-                "Documentación de hallazgos"
+                "Identificación de periodistas especializados",
+                "Contacto con profesionales de distintas disciplinas",
+                "Coordinación de entrevistas",
+                "Elaboración de ocho preguntas estructuradas"
               ]}
-              icon={Database}
+              icon={Users}
             />
             
             <PhaseCard 
               number={3}
-              title="Síntesis e Integración"
-              period="Semanas 9-12"
-              description="Integración de hallazgos, elaboración de conclusiones y redacción del informe final."
+              title="Realización de Entrevistas"
+              period="Fase de recopilación"
+              description="Se realizaron entrevistas estructuradas a periodistas especializados en baloncesto, fútbol masculino, fútbol femenino y fútbol formativo."
               activities={[
-                "Triangulación de datos",
-                "Elaboración de visualizaciones",
-                "Redacción académica",
-                "Revisión y corrección"
+                "Entrevistas grabadas en video",
+                "Registro y categorización de respuestas",
+                "Análisis de patrones comunes",
+                "Identificación de diferencias disciplinares"
               ]}
-              icon={FileText}
+              icon={Mic}
+            />
+
+            <PhaseCard 
+              number={4}
+              title="Desarrollo de Plataformas"
+              period="Fase práctica"
+              description="Diseño y desarrollo de sitio WordPress y perfiles en Instagram y YouTube para experimentar con formatos del periodismo digital."
+              activities={[
+                "Creación de página web en WordPress",
+                "Gestión de perfil de Instagram",
+                "Producción y gestión de canal YouTube",
+                "Diseño de parrilla multimedia"
+              ]}
+              icon={Camera}
             />
           </div>
         </section>
 
-        {/* Herramientas Utilizadas */}
+        {/* Herramientas */}
         <section className="mb-12">
           <h2 className="academic-heading">2.3 Herramientas Utilizadas</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <ToolCard 
-              title="Gestión Bibliográfica"
+              title="Plataformas Multimedia"
               tools={[
-                { name: "Zotero", use: "Gestión de referencias y citas" },
-                { name: "Mendeley", use: "Lectura y anotación de PDFs" },
-                { name: "Connected Papers", use: "Mapeo de literatura relacionada" }
+                { name: "WordPress", use: "Sitio web principal del proyecto" },
+                { name: "Instagram", use: "Narrativas visuales y actualidad" },
+                { name: "YouTube", use: "Contenido audiovisual y entrevistas" }
               ]}
             />
             
             <ToolCard 
-              title="Búsqueda y Análisis"
+              title="Producción de Contenido"
               tools={[
-                { name: "Scopus", use: "Base de datos principal" },
-                { name: "Web of Science", use: "Verificación cruzada" },
-                { name: "Google Scholar", use: "Búsqueda complementaria" }
+                { name: "Canva", use: "Diseño de publicaciones y gráficos" },
+                { name: "Aplicaciones de edición", use: "Edición de videos de entrevistas" },
+                { name: "Herramientas de redes", use: "Gestión y programación" }
               ]}
             />
             
             <ToolCard 
-              title="Visualización de Datos"
+              title="Investigación"
               tools={[
-                { name: "Canva", use: "Infografías y gráficos" },
-                { name: "Flourish", use: "Visualizaciones interactivas" },
-                { name: "Miro", use: "Mapas conceptuales" }
+                { name: "Scopus", use: "Base de datos académica" },
+                { name: "Google Scholar", use: "Búsqueda de literatura" },
+                { name: "Medios digitales", use: "As, Clarín, Meridiano TV, VIP Deportivo" }
               ]}
             />
             
@@ -122,101 +129,49 @@ const Metodologia = () => {
               title="Colaboración"
               tools={[
                 { name: "Google Workspace", use: "Documentos compartidos" },
-                { name: "Notion", use: "Gestión del proyecto" },
-                { name: "Discord", use: "Comunicación del equipo" }
+                { name: "WhatsApp", use: "Coordinación del equipo" },
+                { name: "Discord", use: "Comunicación y reuniones" }
               ]}
             />
           </div>
         </section>
 
-        {/* Criterios de Calidad */}
-        <section className="mb-12">
-          <h2 className="academic-heading">2.4 Criterios de Calidad</h2>
-          
-          <div className="academic-body mb-8">
-            <p>
-              Para garantizar la rigurosidad del trabajo, se han aplicado los siguientes 
-              criterios de calidad adaptados de las directrices para investigación cualitativa:
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <QualityCard 
-              title="Credibilidad"
-              description="Triangulación de fuentes y métodos, revisión por pares entre miembros del equipo."
-            />
-            <QualityCard 
-              title="Transferibilidad"
-              description="Descripción detallada del contexto y procedimientos para permitir aplicabilidad en otros entornos."
-            />
-            <QualityCard 
-              title="Dependencia"
-              description="Documentación exhaustiva del proceso de investigación mediante auditoría de seguimiento."
-            />
-            <QualityCard 
-              title="Confirmabilidad"
-              description="Registro de decisiones metodológicas y reflexividad sobre el papel de los investigadores."
-            />
-          </div>
-        </section>
-
-        {/* Proceso de Trabajo en Equipo */}
+        {/* Proceso */}
         <section>
-          <h2 className="academic-heading">2.5 Organización del Equipo</h2>
+          <h2 className="academic-heading">2.4 Integración y Cohesión</h2>
           
           <Card className="bg-secondary/30">
             <CardContent className="p-8">
-              <div className="flex items-center gap-4 mb-6">
-                <Users className="h-8 w-8 text-primary" />
-                <div>
-                  <h3 className="font-serif text-xl font-semibold">Distribución de Responsabilidades</h3>
-                  <p className="text-muted-foreground">Modelo de trabajo colaborativo con roles rotativos</p>
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-medium text-foreground mb-3">Roles Asignados</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <CheckSquare className="h-4 w-4 text-accent" />
-                      <span>Coordinador/a de proyecto</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckSquare className="h-4 w-4 text-accent" />
-                      <span>Responsable de búsqueda bibliográfica</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckSquare className="h-4 w-4 text-accent" />
-                      <span>Encargado/a de análisis de herramientas</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckSquare className="h-4 w-4 text-accent" />
-                      <span>Editor/a y diseñador/a web</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="academic-body space-y-6">
+                <p>
+                  Para asegurar coherencia entre plataformas, se definió una línea editorial común 
+                  basada en tres pilares:
+                </p>
                 
-                <div>
-                  <h4 className="font-medium text-foreground mb-3">Dinámicas de Trabajo</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex items-center gap-2">
-                      <GitBranch className="h-4 w-4 text-accent" />
-                      <span>Reuniones semanales de seguimiento</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <GitBranch className="h-4 w-4 text-accent" />
-                      <span>Revisión cruzada de borradores</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <GitBranch className="h-4 w-4 text-accent" />
-                      <span>Control de versiones documentales</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <GitBranch className="h-4 w-4 text-accent" />
-                      <span>Retroalimentación continua</span>
-                    </li>
-                  </ul>
+                <div className="grid md:grid-cols-3 gap-6 mt-6">
+                  <div className="p-4 bg-card rounded-lg border border-border">
+                    <CheckSquare className="h-6 w-6 text-accent mb-2" />
+                    <h4 className="font-serif font-semibold text-foreground mb-2">Rigor Informativo</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Contenido contrastado con fuentes claras
+                    </p>
+                  </div>
+                  
+                  <div className="p-4 bg-card rounded-lg border border-border">
+                    <CheckSquare className="h-6 w-6 text-accent mb-2" />
+                    <h4 className="font-serif font-semibold text-foreground mb-2">Accesibilidad Visual</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Diseños adaptados y lenguaje claro
+                    </p>
+                  </div>
+                  
+                  <div className="p-4 bg-card rounded-lg border border-border">
+                    <CheckSquare className="h-6 w-6 text-accent mb-2" />
+                    <h4 className="font-serif font-semibold text-foreground mb-2">Perspectiva Crítica</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Enfoque reflexivo sobre problemas estructurales
+                    </p>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -233,7 +188,7 @@ interface PhaseCardProps {
   period: string;
   description: string;
   activities: string[];
-  icon: typeof Search;
+  icon: typeof FileText;
 }
 
 function PhaseCard({ number, title, period, description, activities, icon: Icon }: PhaseCardProps) {
@@ -279,10 +234,8 @@ interface ToolCardProps {
 function ToolCard({ title, tools }: ToolCardProps) {
   return (
     <Card>
-      <CardHeader className="pb-2">
-        <CardTitle className="text-base font-medium">{title}</CardTitle>
-      </CardHeader>
-      <CardContent>
+      <CardContent className="p-6">
+        <h4 className="font-serif font-semibold text-primary mb-4">{title}</h4>
         <ul className="space-y-3">
           {tools.map((tool, index) => (
             <li key={index} className="flex justify-between items-start">
@@ -291,22 +244,6 @@ function ToolCard({ title, tools }: ToolCardProps) {
             </li>
           ))}
         </ul>
-      </CardContent>
-    </Card>
-  );
-}
-
-interface QualityCardProps {
-  title: string;
-  description: string;
-}
-
-function QualityCard({ title, description }: QualityCardProps) {
-  return (
-    <Card className="bg-card">
-      <CardContent className="p-5">
-        <h4 className="font-serif font-semibold text-primary mb-2">{title}</h4>
-        <p className="text-sm text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
   );
