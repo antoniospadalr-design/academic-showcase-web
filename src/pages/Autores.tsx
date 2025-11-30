@@ -1,7 +1,7 @@
 import { AcademicLayout } from "@/components/layout/AcademicLayout";
 import { SectionHeader } from "@/components/academic/SectionHeader";
 import { AuthorCard } from "@/components/academic/AuthorCard";
-import { Users, Award, BookOpen, Target } from "lucide-react";
+import { Users, Award, Camera, Mic } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Autores = () => {
@@ -9,7 +9,7 @@ const Autores = () => {
     <AcademicLayout>
       <SectionHeader 
         title="Autores"
-        subtitle="Equipo de investigación"
+        subtitle="Equipo de investigación multimedia"
         icon={Users}
       />
       
@@ -18,11 +18,9 @@ const Autores = () => {
         <section className="mb-12">
           <div className="academic-body">
             <p>
-              Este trabajo ha sido elaborado por el <strong>Equipo Alpha</strong>, un grupo 
-              de investigación conformado por estudiantes del Grado en Educación de la 
-              Universidad Complutense de Madrid. Cada miembro ha contribuido con sus 
-              conocimientos y competencias específicas para lograr un trabajo riguroso 
-              y comprehensivo.
+              Este trabajo ha sido elaborado por un equipo multidisciplinario de estudiantes de 
+              tercer año de Periodismo, cada uno aportando competencias específicas en áreas como 
+              producción audiovisual, gestión de redes sociales y comunicación deportiva.
             </p>
           </div>
         </section>
@@ -33,39 +31,39 @@ const Autores = () => {
           
           <div className="space-y-6">
             <AuthorCard 
-              name="María García López"
-              role="Coordinadora del Proyecto"
-              institution="Universidad Complutense de Madrid"
-              email="m.garcia@ucm.es"
-              bio="Estudiante de cuarto curso del Grado en Educación con especialización en Tecnología Educativa. Interesada en la investigación sobre metodologías activas y el uso de herramientas digitales en el aula. Ha participado en proyectos de innovación docente y cuenta con experiencia en coordinación de equipos de trabajo."
-              specialization="Tecnología Educativa y Metodologías Activas"
+              name="Antonio Spada"
+              role="Coordinador y Analista Deportivo"
+              institution="Grado en Periodismo — Tercer Año"
+              email="a.spada@estudiantes.es"
+              bio="Futbolista semiprofesional de origen venezolano. Posee un nivel C1 de inglés y B1 de italiano. Su experiencia en el ámbito deportivo aporta una perspectiva práctica sobre la industria del fútbol, especialmente en temas relacionados con el rendimiento, la profesionalización y la realidad de los deportistas dentro del ecosistema mediático."
+              specialization="Periodismo Deportivo y Análisis Futbolístico"
             />
             
             <AuthorCard 
-              name="Carlos Rodríguez Martín"
-              role="Responsable de Investigación Bibliográfica"
-              institution="Universidad Complutense de Madrid"
-              email="c.rodriguez@ucm.es"
-              bio="Estudiante del Grado en Educación con formación complementaria en análisis de datos educativos. Experiencia en gestión documental y revisión sistemática de literatura. Colaborador en el grupo de investigación GITE-UCM durante el último año académico."
-              specialization="Análisis de Datos y Gestión Documental"
+              name="Israel Calero"
+              role="Director de Producción Audiovisual"
+              institution="Grado en Periodismo — Tercer Año"
+              email="i.calero@estudiantes.es"
+              bio="Técnico Superior en Producción Audiovisual. De nacionalidad española, cuenta con amplios conocimientos en narrativa audiovisual, gestión técnica y producción de contenidos digitales. Posee un nivel C1 de inglés. Su formación aporta al proyecto una visión profesional sobre los procesos técnicos, además de contar con amplia experiencia en la edición de videos."
+              specialization="Producción Audiovisual y Edición de Video"
             />
             
             <AuthorCard 
-              name="Ana Fernández Ruiz"
-              role="Analista de Herramientas Tecnológicas"
-              institution="Universidad Complutense de Madrid"
-              email="a.fernandez@ucm.es"
-              bio="Estudiante del Grado en Educación con especial interés en la inteligencia artificial aplicada al ámbito educativo. Cuenta con certificaciones en herramientas de productividad y ha realizado cursos especializados en IA generativa. Miembro activo de la comunidad EdTech UCM."
-              specialization="Inteligencia Artificial y EdTech"
+              name="Juan Arrufat"
+              role="Responsable de Entrevistas"
+              institution="Grado en Periodismo — Tercer Año"
+              email="j.arrufat@estudiantes.es"
+              bio="Técnico Superior en Producción Audiovisual. Natural de Sevilla (Andalucía). Posee un nivel C1 de inglés. Especializado en producción, edición y planificación de contenidos, contribuye al proyecto con una mirada técnica vinculada a las nuevas dinámicas del periodismo digital. Siendo el artífice principal de varias entrevistas."
+              specialization="Entrevistas y Producción de Contenidos"
             />
             
             <AuthorCard 
-              name="David Sánchez Pérez"
-              role="Editor y Diseñador Web"
-              institution="Universidad Complutense de Madrid"
-              email="d.sanchez@ucm.es"
-              bio="Estudiante del Grado en Educación con conocimientos avanzados en diseño web y comunicación visual. Experiencia en la creación de recursos educativos digitales y materiales multimedia. Colaborador en proyectos de divulgación científica del departamento de Didáctica."
-              specialization="Diseño Web y Comunicación Visual"
+              name="Erik Allerding"
+              role="Gestor de Redes Sociales"
+              institution="Grado en Periodismo — Tercer Año"
+              email="e.allerding@estudiantes.es"
+              bio="Cantante de origen boliviano-ecuatoriano y español, concretamente madrileño. Posee un nivel C1 de inglés. Su experiencia en el ámbito artístico y musical fortalece el enfoque creativo del proyecto, su soltura al hablar, su experiencia utilizando ordenadores y demás aplicaciones, lo hacen un autor muy importante en la presentación, aportando competencias en comunicación digital y construcción de identidad en redes sociales."
+              specialization="Redes Sociales y Comunicación Digital"
             />
           </div>
         </section>
@@ -76,46 +74,46 @@ const Autores = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             <ContributionCard 
-              author="María García López"
-              icon={Target}
-              contributions={[
-                "Coordinación general del proyecto",
-                "Redacción de introducción y conclusiones",
-                "Supervisión de coherencia y estilo",
-                "Gestión de plazos y entregas"
-              ]}
-            />
-            
-            <ContributionCard 
-              author="Carlos Rodríguez Martín"
-              icon={BookOpen}
-              contributions={[
-                "Búsqueda y selección de fuentes",
-                "Elaboración de la revisión bibliográfica",
-                "Redacción de marco teórico",
-                "Formateo de citas APA"
-              ]}
-            />
-            
-            <ContributionCard 
-              author="Ana Fernández Ruiz"
+              author="Antonio Spada"
               icon={Award}
               contributions={[
-                "Análisis de herramientas de IA",
-                "Evaluación de plataformas educativas",
-                "Redacción del desarrollo",
-                "Creación de visualizaciones de datos"
+                "Coordinación general del proyecto",
+                "Análisis de contenidos deportivos",
+                "Redacción de conclusiones",
+                "Gestión de contactos profesionales"
               ]}
             />
             
             <ContributionCard 
-              author="David Sánchez Pérez"
+              author="Israel Calero"
+              icon={Camera}
+              contributions={[
+                "Edición de videos de entrevistas",
+                "Producción audiovisual",
+                "Gestión técnica del canal YouTube",
+                "Post-producción de contenidos"
+              ]}
+            />
+            
+            <ContributionCard 
+              author="Juan Arrufat"
+              icon={Mic}
+              contributions={[
+                "Realización de entrevistas",
+                "Coordinación con periodistas",
+                "Planificación de contenidos",
+                "Revisión editorial"
+              ]}
+            />
+            
+            <ContributionCard 
+              author="Erik Allerding"
               icon={Users}
               contributions={[
-                "Diseño y desarrollo de la web",
-                "Integración de recursos multimedia",
-                "Maquetación de contenidos",
-                "Revisión de accesibilidad"
+                "Gestión de redes sociales",
+                "Diseño de publicaciones Instagram",
+                "Estrategia de contenidos",
+                "Community management"
               ]}
             />
           </div>
@@ -129,26 +127,26 @@ const Autores = () => {
             <CardContent className="p-8">
               <div className="academic-body space-y-4">
                 <p>
-                  El equipo desea expresar su agradecimiento a todas las personas e 
-                  instituciones que han hecho posible la realización de este trabajo:
+                  El equipo desea expresar su agradecimiento a todas las personas que han hecho 
+                  posible la realización de este proyecto:
                 </p>
                 
                 <ul className="space-y-2 ml-4">
                   <li className="text-muted-foreground">
-                    • A la <strong>Dra. Elena Martínez</strong>, profesora de la asignatura, 
+                    • A <strong>Jesús Flores</strong>, profesor de la asignatura de Multimedia, 
                     por su orientación y apoyo constante durante el desarrollo del proyecto.
                   </li>
                   <li className="text-muted-foreground">
-                    • Al <strong>Departamento de Didáctica y Organización Escolar</strong> de 
-                    la UCM por facilitar el acceso a recursos bibliográficos especializados.
+                    • A los <strong>cuatro periodistas deportivos</strong> que generosamente 
+                    compartieron su tiempo y experiencia en las entrevistas realizadas.
                   </li>
                   <li className="text-muted-foreground">
-                    • A la <strong>Biblioteca de la Facultad de Educación</strong> por su 
-                    asistencia en la localización de fuentes y gestión de préstamos interbibliotecarios.
+                    • A nuestras <strong>familias y amigos</strong> por su comprensión y apoyo 
+                    durante las semanas de trabajo intensivo.
                   </li>
                   <li className="text-muted-foreground">
-                    • A nuestras <strong>familias y compañeros</strong> por su comprensión 
-                    y apoyo durante las semanas de trabajo intensivo.
+                    • A la comunidad de <strong>WordPress, Instagram y YouTube</strong> por 
+                    proporcionar las plataformas que hicieron posible este proyecto multimedia.
                   </li>
                 </ul>
               </div>
@@ -162,7 +160,7 @@ const Autores = () => {
 
 interface ContributionCardProps {
   author: string;
-  icon: typeof Target;
+  icon: typeof Award;
   contributions: string[];
 }
 

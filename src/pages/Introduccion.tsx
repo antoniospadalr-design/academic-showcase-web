@@ -14,110 +14,140 @@ const Introduccion = () => {
       
       <article className="px-6 md:px-12 py-12 max-w-4xl">
         <div className="academic-body space-y-6">
-          <h2 className="academic-heading">1.1 Contextualización del Problema</h2>
+          <h2 className="academic-heading">1.1 Contextualización</h2>
           
           <p>
-            La educación superior se encuentra en un momento de transformación sin precedentes, 
-            impulsada fundamentalmente por el avance acelerado de las tecnologías de inteligencia 
-            artificial (IA). En las últimas dos décadas, hemos sido testigos de cómo estas 
-            tecnologías han pasado de ser conceptos teóricos a herramientas aplicadas que 
-            modifican sustancialmente los procesos de enseñanza-aprendizaje <InlineCitation author="Luckin et al." year="2016" />.
+            El periodismo deportivo se ha consolidado en las últimas décadas como una de las áreas 
+            de comunicación con mayor impacto social, económico y mediático. La expansión del deporte 
+            a escala internacional, es decir, la profesionalización de los medios y el auge de nuevas 
+            plataformas digitales, ha provocado un cambio estructural en la forma en que los 
+            "prosumidores" hacen uso de la información deportiva <InlineCitation author="Boyle" year="2017" />.
           </p>
 
           <p>
-            El contexto actual, marcado por la pandemia de COVID-19 y sus consecuencias en la 
-            digitalización educativa, ha acelerado la adopción de tecnologías emergentes en las 
-            instituciones de educación superior. Según datos de la UNESCO <InlineCitation author="UNESCO" year="2021" />, 
-            más del 90% de las universidades a nivel mundial implementaron alguna forma de 
-            educación a distancia durante 2020, lo que supuso un cambio paradigmático en la 
-            concepción tradicional de la enseñanza universitaria.
+            En este contexto, las redes sociales y los sitios web de autopublicación de servicios 
+            multimedia son herramientas que han servido para la construcción de narrativas tanto 
+            buenas como malas, para la creación de comunidades pequeñas, medianas y grandes, y 
+            además para la elaboración de contenidos cada vez más inmediatos y personalizados para 
+            el público, lo que ha incrementado la cantidad de noticias falsas. Esto se debe a que 
+            los medios buscan el clic fácil para monetizar los contenidos.
+          </p>
+
+          <h2 className="academic-heading">1.2 La Digitalización del Periodismo</h2>
+
+          <p>
+            La digitalización que ha vivido el periodismo desde principios de este siglo ha 
+            transformado radicalmente las dinámicas tradicionales del periodismo. Hoy en día ha 
+            bajado mucho el consumo de periódicos en papel y en la juventud es muy raro que lean 
+            el periódico, todo esto gracias al éxito de las redes sociales. Hoy, periodistas, 
+            clubes, deportistas, aficionados y creadores de contenido, entre otros, compiten por 
+            la atención de la audiencia; los algoritmos controlan el sistema.
           </p>
 
           <Citation 
-            author="Zawacki-Richter et al."
-            year="2019"
-            text="La inteligencia artificial en educación (AIEd) representa un campo emergente que promete revolucionar la forma en que conceptualizamos los procesos de aprendizaje, ofreciendo posibilidades de personalización, automatización y análisis de datos sin precedentes."
-            page="3"
+            author="Hutchins & Rowe"
+            year="2012"
+            text="El ecosistema mediático deportivo se adapta continuamente para satisfacer la demanda de inmediatez, rapidez informativa e interacción constante, lo que ha hecho que muchas veces la información sea engañosa o no veraz del todo, llegando a haber conflictos éticos entre los profesionales."
+            page="78"
           />
 
-          <h2 className="academic-heading">1.2 Marco Teórico</h2>
+          <h2 className="academic-heading">1.3 El Desafío del Intrusismo Profesional</h2>
 
           <p>
-            El presente trabajo se fundamenta en varias perspectivas teóricas complementarias. 
-            En primer lugar, adoptamos el marco del conectivismo propuesto por <InlineCitation author="Siemens" year="2005" />, 
-            quien argumenta que el aprendizaje en la era digital debe entenderse como un proceso 
-            de conexión de nodos especializados o fuentes de información, donde la capacidad de 
-            conocer más es más crítica que lo que actualmente se conoce.
+            Uno de los desafíos más relevantes en la actualidad es el intrusismo profesional. 
+            La presencia creciente de influencers, creadores de contenido y usuarios sin formación 
+            periodística que producen y difunden información deportiva cuestiona las fronteras 
+            tradicionales de la profesión.
           </p>
 
           <p>
-            Asimismo, nos apoyamos en la teoría del aprendizaje adaptativo <InlineCitation author="Brusilovsky & Peylo" year="2003" />, 
-            que sostiene que los sistemas educativos deben ser capaces de ajustarse a las 
-            necesidades individuales de cada estudiante. Esta perspectiva resulta especialmente 
-            relevante en el contexto de la IA, dado que los algoritmos de aprendizaje automático 
-            permiten crear experiencias educativas verdaderamente personalizadas.
+            Esta situación ha generado debates sobre la calidad informativa, la ética comunicativa 
+            y la legitimidad del rol del periodista en un entorno donde el acceso a la tecnología 
+            permite que cualquier persona pueda producir contenido sin intermediarios, lo cual 
+            para muchos profesionales es un grave problema ya que al faltar esa formación que se 
+            imparte en las universidades tienden a ocurrir errores y malformaciones 
+            <InlineCitation author="García & Meier" year="2021" />.
           </p>
 
-          <Citation 
-            author="Holmes et al."
-            year="2019"
-            text="Los sistemas de tutoría inteligente han demostrado ser efectivos en proporcionar retroalimentación inmediata y adaptada, mejorando significativamente los resultados de aprendizaje en comparación con métodos tradicionales."
-            page="45"
-          />
-
-          <h2 className="academic-heading">1.3 Justificación del Estudio</h2>
+          <h2 className="academic-heading">1.4 Reinvención Profesional</h2>
 
           <p>
-            La relevancia de este estudio radica en la necesidad de comprender críticamente 
-            las implicaciones de la IA en el ámbito universitario. Si bien existe abundante 
-            literatura sobre las posibilidades técnicas de estas tecnologías <InlineCitation author="Popenici & Kerr" year="2017" />, 
-            son menos frecuentes los análisis que abordan las dimensiones pedagógicas, éticas 
-            y sociales de su implementación.
+            Al mismo tiempo, los propios periodistas han tenido que reinventarse, desarrollar 
+            marcas personales sólidas y adaptarse a algoritmos propios de plataformas como 
+            Instagram, YouTube o TikTok, donde la visibilidad mediática depende tanto de la 
+            calidad del contenido como de la habilidad para gestionar comunidades digitales. 
+            Teniendo en cuenta que se meten al mundo de los algoritmos y que muchas veces, por 
+            más que sea una súper investigación o un gran trabajo periodístico, el algoritmo es 
+            el que decide si le gusta a la gente o si mostrárselo a cada tipo de perfil.
           </p>
 
           <p>
-            Desde una perspectiva institucional, las universidades enfrentan el desafío de 
-            integrar estas tecnologías de manera que potencien la calidad educativa sin 
-            comprometer valores fundamentales como la equidad, la privacidad y la integridad 
-            académica <InlineCitation author="Selwyn" year="2019" />. Este trabajo pretende 
-            contribuir a ese debate proporcionando un análisis fundamentado y actualizado.
+            Las redes sociales hoy en día muestran más ciertos tipos de contenidos también en 
+            base a ideología y lo que la gente haga más búsquedas. Entonces es un nuevo reto que 
+            tienen los trabajadores de esta profesión que no necesariamente fueron preparados para 
+            esto en la universidad o mientras cursaban los estudios.
           </p>
 
-          <h2 className="academic-heading">1.4 Delimitación del Tema</h2>
+          <h2 className="academic-heading">1.5 El Proyecto "Transcurso del Juego"</h2>
 
           <p>
-            El presente estudio se centra específicamente en el impacto de la IA generativa 
-            y los sistemas de aprendizaje adaptativo en la educación superior, con especial 
-            énfasis en el contexto europeo y latinoamericano. No se abordan otras aplicaciones 
-            de la IA en contextos educativos no universitarios, ni tecnologías emergentes que 
-            no estén directamente relacionadas con los procesos de enseñanza-aprendizaje.
+            Este trabajo se desarrolla precisamente dentro de este contexto de transformación. 
+            Por otro lado, también se investiga la forma de encontrar solución a todas las 
+            problemáticas mencionadas anteriormente. A través de la creación de una página web 
+            en WordPress y perfiles activos en Instagram y YouTube con el nombre de "Transcurso 
+            del Juego" en las respectivas plataformas, el objetivo fue analizar el estado actual 
+            del periodismo deportivo y experimentar de manera práctica con los formatos, lenguajes 
+            y dinámicas propias del ecosistema digital.
           </p>
 
           <p>
-            Temporalmente, el análisis abarca el período 2018-2024, coincidiendo con el 
-            surgimiento y popularización de modelos de lenguaje de gran escala (LLMs) y su 
-            aplicación en entornos educativos. Esta delimitación temporal permite capturar 
-            los desarrollos más recientes y relevantes en el campo <InlineCitation author="Chen et al." year="2023" />.
+            Además, para enriquecer el marco analítico, se realizaron entrevistas a periodistas 
+            especializados en baloncesto, fútbol masculino, fútbol femenino y fútbol formativo, 
+            cada uno contando con un bagaje y experiencia en cada uno de sus deportes. Esto 
+            permitió obtener una visión general por parte de cada uno de los cuatro entrevistados, 
+            por lo que en el trabajo queda reflejada la comparación de las opiniones y una visión 
+            más general, además de retos que enfrentan los profesionales del deporte en la 
+            actualidad en las que ellos también se ven afectados.
           </p>
 
-          <Citation 
-            author="Kasneci et al."
-            year="2023"
-            text="ChatGPT y herramientas similares representan un punto de inflexión en la historia de la tecnología educativa, planteando tanto oportunidades sin precedentes como desafíos significativos para docentes, estudiantes e instituciones."
-            page="1"
-          />
-
-          <h2 className="academic-heading">1.5 Estructura del Trabajo</h2>
+          <h2 className="academic-heading">1.6 Problemáticas Identificadas</h2>
 
           <p>
-            El presente trabajo se organiza en las siguientes secciones: tras esta introducción, 
-            se presentan los objetivos generales y específicos que guían la investigación. 
-            Posteriormente, se detalla la metodología empleada, incluyendo las herramientas y 
-            técnicas de análisis utilizadas. El núcleo del trabajo consiste en un desarrollo 
-            extenso que incluye análisis multimedia, recursos interactivos y visualizaciones 
-            de datos. Finalmente, se presentan las conclusiones derivadas del estudio y se 
-            incluye la bibliografía completa en formato APA 7ª edición.
+            Los testimonios recogidos coinciden en señalar problemas como:
           </p>
+
+          <ul className="space-y-3 ml-6">
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+              <span>
+                <strong>La precarización laboral y la dificultad para obtener un primer empleo estable:</strong> Todo 
+                esto debido a la falta de experiencia y a la competitividad dentro del sector donde 
+                pesan mucho los números.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+              <span>
+                <strong>La presión por la inmediatez informativa:</strong> Hoy en día los medios exigen velocidad 
+                a la hora de publicar las informaciones buscando monetizar además de obtener la primicia.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+              <span>
+                <strong>La falta de reconocimiento a la formación universitaria frente al intrusismo:</strong> El 
+                intrusismo laboral de personas que no poseen la carrera quitándole mérito a las 
+                personas que estudian la carrera y se preparan para ella durante años.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+              <span>
+                <strong>La evolución acelerada de los modelos de negocio:</strong> Las estadísticas no mienten, 
+                los medios han desarrollado nuevas estrategias.
+              </span>
+            </li>
+          </ul>
         </div>
       </article>
     </AcademicLayout>
